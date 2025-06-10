@@ -1,13 +1,18 @@
 
+import { Provider } from 'react-redux'
 import './App.css'
-import LoginForm from './components/loginForm'
+
+import store from './store'
+import AppRoutes from './appInnovation/routes/routes'
+// import LoginForm from './components/loginForm'
 
 function App() {
 
   return (
-    <>
-    <LoginForm/>
-    </>
+    <Provider store={store}>
+     <AppRoutes/>
+
+    </Provider>
   )
 }
 
